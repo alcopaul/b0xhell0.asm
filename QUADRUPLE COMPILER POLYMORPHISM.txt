@@ -1,0 +1,37 @@
+
+QUADRUPLE COMPILER POLYMORPHISM
+by alCoPaUL, HAsAsIN [NaCl], beth GviLLErMo [GIMO], Zelotes ni Isa [ZnI], Brigada Ocho [b8]
+June 24, 2024, NYC
+
+
+
+
+
+
+
+
+
+                               COMPILER IV
+ 
+
+                                                      
+         SOURCE CODE D                               SOURCE CODE C
+
+
+
+COMPILER I                                                        COMPILER III
+
+              
+                
+            SOURCE CODE A                           SOURCE CODE B
+
+
+                              
+                               COMPILER II
+                               
+                               
+                               
+                              
+                               
+                               
+                               
