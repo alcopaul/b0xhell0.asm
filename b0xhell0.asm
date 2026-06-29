@@ -7,25 +7,25 @@
 ; ml64.exe b0xhell0.asm /link /defaultlib:msvcrt.lib user32.lib /subsystem:console /entry:main
 ;
 .code
-EXTRN	printf:PROC
-EXTRN	__imp_MessageBoxA:PROC
-main	PROC
-	sub	rsp, 40					; 00000028H
-	lea	r8, OFFSET $SG80335
-	lea	rdx, OFFSET $SG80334
-	push 	rdx
-	push 	r8
-	lea     rcx, OFFSET $SG25840
-	call 	printf
-        xor	r9d, r9d
-	pop 	rdx
-	pop 	r8
-	xor	ecx, ecx
-	call	QWORD PTR __imp_MessageBoxA
-	xor	eax, eax
-	add	rsp, 40					; 00000028H
-	ret	0
-main	ENDP
+EXTRN printf:PROC
+EXTRN __imp_MessageBoxA:PROC
+main PROC
+sub rsp, 40		; 00000028H
+lea	r8, OFFSET $SG80335
+lea	rdx, OFFSET $SG80334
+push rdx
+push r8
+lea	rcx, OFFSET $SG25840
+call printf
+xor r9d, r9d
+pop	rdx
+pop r8
+xor	ecx, ecx
+call QWORD PTR __imp_MessageBoxA
+xor eax, eax
+add rsp, 40		; 00000028H
+ret	0
+main ENDP
 .data
 $SG80334 DB	'Hey!', 00H
 $SG80335 DB	'What''s Up?', 00H
